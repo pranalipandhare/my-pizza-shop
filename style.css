@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Dancing+Script&family=Great+Vibes&family=Lora:wght@500&family=Nunito:wght@500&family=Playfair:wght@800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab&family=Rubik+Pixels&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Dancing+Script&family=Great+Vibes&family=Lora:wght@500&family=Nunito:wght@500&family=Playfair:wght@800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab&family=Rubik+Pixels&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100px;
+}
+
+.container {
+  max-width: 1148px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn-1 {
+  font-size: 16px;
+  color: rgb(235, 146, 31);
+  border: 1px solid rgb(235, 246, 31);
+  border-radius: 30px;
+  display: inline-block;
+  text-transform: capitalize;
+  letter-spacing: 1.5;
+  transition: 0.5s;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 20px;
+  max-width: 100px;
+  background: transparent;
+}
+.btn-1:hover {
+  color: #fff;
+  background: rgb(235, 246, 31);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 20px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+header.sticky {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+header.sticky .logo span {
+  color: #000;
+}
+header.sticky .nav li a {
+  color: rgb(235, 146, 31);
+}
+header.sticky .nav li a:hover {
+  color: #000;
+}
+header .logo {
+  color: rgb(235, 146, 31);
+  font-weight: 700;
+  font-size: 40px;
+  text-decoration: none;
+}
+header .logo span {
+  color: #fff;
+}
+header .nav {
+  position: relative;
+  display: flex;
+}
+header .nav li {
+  margin: 0 0 0 30px;
+}
+header .nav li a {
+  color: #fff;
+  font-weight: 550;
+  text-transform: capitalize;
+}
+header .nav li a:hover {
+  color: rgb(235, 146, 31);
+}
+
+.homo {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url(../images/p4.jpg) no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.homo:hover {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: egba(0, 0, 0, 0.3);
+}
+.homo .content {
+  max-width: 900px;
+  text-align: center;
+  z-index: 2;
+}
+.homo .content h2 {
+  font-size: 90px;
+  font-weight: 600;
+  font-family: "Great Vibes", cursive;
+  color: #fff;
+}
+.homo .content p {
+  font-size: 20px;
+  font-weight: 500;
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
+.homo .content a {
+  color: #fff;
+  border: #fff 1px solid;
+  max-width: 200px;
+}
+.homo .content a:hover {
+  background: #fff;
+  color: rgb(235, 146, 31);
+}/*# sourceMappingURL=style.css.map */
