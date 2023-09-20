@@ -37,6 +37,27 @@ img {
   flex-wrap: wrap;
 }
 
+.titleText .section-title {
+  background: transparent;
+  padding: 0 15px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.titleText .section-title h2 {
+  font-size: 36px;
+  text-transform: capitalize;
+  color: rgb(235, 146, 31);
+}
+.titleText .section-title h2::before {
+  content: attr(data-title);
+  display: block;
+  font-size: 28px;
+  color: #000;
+  font-family: "Great Vibes", cursive;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
 .btn-1 {
   font-size: 16px;
   color: rgb(235, 146, 31);
@@ -57,6 +78,16 @@ img {
   background: rgb(235, 246, 31);
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+    transform: translate(-25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
 header {
   position: fixed;
   top: 0;
@@ -112,13 +143,13 @@ header .nav li a:hover {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: url(../images/p4.jpg) no-repeat;
+  background: url(../images/a3.jpg) no-repeat;
   background-size: cover;
   align-items: center;
   justify-content: center;
   display: flex;
 }
-.homo:hover {
+.homo:before {
   content: "";
   position: absolute;
   left: 0;
@@ -126,7 +157,7 @@ header .nav li a:hover {
   height: 100%;
   width: 100%;
   z-index: 1;
-  background: egba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
 .homo .content {
   max-width: 900px;
@@ -153,4 +184,252 @@ header .nav li a:hover {
 .homo .content a:hover {
   background: #fff;
   color: rgb(235, 146, 31);
+}
+
+.about {
+  min-height: 100vh;
+  padding: 100px 0 0;
+}
+.about .container .row {
+  display: flex;
+  width: 100%;
+  padding: 0 15px 120px 15px;
+  justify-content: space-between;
+}
+.about .container .row .about-img {
+  position: relative;
+  width: 40%;
+}
+.about .container .row .about-img .img-bx {
+  position: relative;
+}
+.about .container .row .about-img .img-bx img {
+  min-height: 80vh;
+  min-width: 80vh;
+  position: relative;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.about .container .row .about-text {
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+.about .container .row .about-text .text-bx h3 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: rgb(235, 146, 31);
+  text-transform: capitalize;
+}
+.about .container .row .about-text .text-bx p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.about .container .row .about-text .text-bx a {
+  margin-top: 15px;
+  max-width: 250px;
+}
+.about .container .row:nth-of-type(3) {
+  padding-bottom: 60px;
+}
+.about .container .row:nth-of-type(3) .about-text {
+  width: 100%;
+  text-align: center;
+}
+
+.service {
+  min-height: 100vh;
+  padding: 5px 0 0;
+}
+.service .container .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  height: 300px;
+  background: url(../images/p5.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+}
+.service .container .row::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+.service .container .row .box {
+  text-align: center;
+  padding: 20px;
+}
+.service .container .row .box i {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background: rgb(235, 146, 31);
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.service .container .row .box h3 {
+  color: #fff;
+  text-transform: capitalize;
+}
+.service .container .row .box p {
+  color: #fff;
+}
+.service .container .button {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+.service .container .button .btn-1 {
+  max-width: 150px;
+}
+
+.menu {
+  min-height: 100vh;
+  padding: 100px 0 0;
+}
+.menu .container .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  justify-content: center;
+  padding: 0 15px;
+  width: 100%;
+  justify-items: center;
+}
+.menu .container .row .menu-tabs {
+  padding: 0 15px 50px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+}
+.menu .container .row .menu-tabs .tab-item {
+  display: inline-block;
+  margin: 0 5px 10px 5px;
+  cursor: pointer;
+  padding: 6px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  color: #000;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.menu .container .row .menu-tabs .tab-item:hover:not(.active) {
+  opacity: 0.6;
+}
+.menu .container .row .menu-tabs .tab-item.active {
+  color: rgb(235, 146, 31);
+  border: 1px solid rgb(235, 246, 31);
+  display: inline-block;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.menu .container .row .item {
+  position: relative;
+  border-radius: 10px;
+  background: #fff;
+  max-width: 15rem;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+.menu .container .row .item:hover .icons {
+  top: 0;
+}
+.menu .container .row .item.hide {
+  display: none;
+}
+.menu .container .row .item.show {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+.menu .container .row .item .icons {
+  position: absolute;
+  top: 115%;
+  left: 0;
+  height: 250;
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transition: all 0.4s ease;
+}
+.menu .container .row .item .icons a {
+  font-size: 18px;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  color: #fff;
+  margin: 0 10px 10px 0;
+}
+.menu .container .row .item .icons a:hover {
+  color: rgb(235, 146, 31);
+}
+.menu .container .row .item .image {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+}
+.menu .container .row .item .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.menu .container .row .item .content {
+  padding: 10px;
+  align-items: center;
+  text-align: left;
+}
+.menu .container .row .item .content h3 {
+  font-size: 20px;
+  color: rgb(235, 146, 31);
+  text-transform: capitalize;
+}
+.menu .container .row .item .content .info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #000;
+}
+.menu .container .row .item .content .info .price {
+  color: #000;
+}
+.menu .container .row .item .content .info .price span {
+  font-weight: 600;
+  font-size: 18px;
+  color: rgb(235, 146, 31);
+}
+.menu .container .row .item .content .info i {
+  color: rgb(235, 246, 31);
+}
+.menu .container .row .item .content .info i span {
+  font-weight: 400;
+  margin: 0 0 0 1px;
+  color: #000;
+}
+.menu .container .row .item .content .category {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0 0;
+  justify-content: space-between;
+}
+.menu .container .row .item .content .category .cat-item {
+  font-size: 12px;
+  color: #000;
+  opacity: 0.5;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
