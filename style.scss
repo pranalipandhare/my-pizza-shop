@@ -196,7 +196,7 @@ header {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: url(../images/a3.jpg) no-repeat;
+  background: url(../images/p2.jpg) no-repeat;
   background-size: cover;
   align-items: center;
   justify-content: center;
@@ -264,7 +264,7 @@ header {
 
           img {
             min-height: 80vh;
-            min-width: 80vh;
+            min-width: 100vh;
             position: relative;
             object-fit: cover;
             border-radius: 10px;
@@ -274,7 +274,7 @@ header {
 
       .about-text {
         position: relative;
-        width: 40%;
+        width: 50%;
         height: 100%;
 
         .text-bx {
@@ -312,7 +312,7 @@ header {
 // ========== Service section
 
 .service {
-  min-height: 100vh;
+  min-height: 5vh;
   padding: 5px 0 0;
 
   .container {
@@ -545,7 +545,149 @@ header {
 
 // ========== Testimonials section
 
+.testi {
+  min-height: 100vh;
+  padding: 100px 0 0 0;
+  background: url(../images/bg.jpg) repeat;
+  background-size: 250px 250px;
+
+  .titleText {
+    .section-title {
+      h2 {
+        &::before {
+          content: attr(data-title);
+          color: $bg-white-50;
+        }
+      }
+    }
+  }
+
+  .row {
+    @include grid(20rem);
+    justify-content: center;
+    padding: 0 15px;
+    width: 100%;
+    justify-content: center;
+
+    .testi-item {
+      background: $bg-white-50;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px;
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+
+        img {
+          height: 60px;
+          width: 60px;
+          border-radius: 50%;
+        }
+
+        .info {
+          h3 {
+            text-transform: capitalize;
+            color: $text-sec-50;
+          }
+          span {
+            text-transform: capitalize;
+            font-style: italic;
+            opacity: 0.7;
+          }
+        }
+      }
+      p {
+        margin: 0 0 10px;
+      }
+    }
+  }
+}
+
 // ========== Gallery section
+
+.gallery {
+  min-height: 100vh;
+  padding: 100px 0 0;
+
+  .container {
+    .row {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(4, 250px);
+      grid-template-rows: repeat(3, 250px);
+      gap: 15px;
+
+      &:hover {
+        .photo {
+          img {
+            opacity: 0.5;
+          }
+        }
+      }
+
+      .photo {
+        border-radius: 10px;
+        overflow: hidden;
+
+        &:nth-child(2) {
+          grid-column: span 2;
+
+          img {
+            height: 100%;
+          }
+        }
+
+        &:nth-child(3) {
+          grid-row: span 2;
+
+          img {
+            height: 100%;
+          }
+        }
+
+        &:nth-child(4) {
+          grid-row: span 2;
+
+          img {
+            height: 100%;
+          }
+        }
+
+        &:nth-child(8) {
+          grid-column: span 2;
+
+          img {
+            transform: translateY(-40px);
+          }
+        }
+
+        img {
+          min-height: 250px;
+          min-width: 250px;
+          object-fit: cover;
+          transition: all 0.3s linear;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .button {
+      width: 100%;
+      padding: 40px 0 0;
+      display: flex;
+      justify-content: center;
+
+      .btn-1 {
+        max-width: 150px;
+      }
+    }
+  }
+}
 
 // ========== Team section
 
