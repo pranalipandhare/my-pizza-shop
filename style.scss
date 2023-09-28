@@ -196,7 +196,7 @@ header {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: url(../images/p2.jpg) no-repeat;
+  background: url(../images/w1.jpg) no-repeat;
   background-size: cover;
   align-items: center;
   justify-content: center;
@@ -257,14 +257,14 @@ header {
 
       .about-img {
         position: relative;
-        width: 40%;
+        width: 45%;
 
         .img-bx {
           position: relative;
 
           img {
             min-height: 80vh;
-            min-width: 100vh;
+            min-width: 85vh;
             position: relative;
             object-fit: cover;
             border-radius: 10px;
@@ -691,8 +691,192 @@ header {
 
 // ========== Team section
 
+.team {
+  min-height: 100vh;
+  padding: 100px 0;
+
+  .container {
+    .row {
+      @include grid(20rem);
+      justify-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 0 15px;
+
+      .team-item {
+        position: relative;
+        height: 520px;
+        width: 300px;
+        overflow: hidden;
+        box-shadow: $shadow;
+        border-radius: 20px;
+
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+
+        .icons {
+          top: 0;
+          left: 0;
+          position: absolute;
+          height: 450px;
+          width: 100%;
+          gap: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: flex-end;
+          z-index: 5;
+          transform: translateX(50px);
+          transition: all 0.5s ease;
+
+          a {
+            position: relative;
+            font-size: 18px;
+            height: 20px;
+            width: 20px;
+            line-height: 20px;
+            color: $text-prl-50;
+            margin: 0 10px 10px 0;
+
+            &:hover {
+              columns: $text-sec-50;
+            }
+          }
+        }
+
+        &:hover {
+          transition: all 0.5s ease;
+          background: $bg-secondary-50;
+
+          .team-item-info {
+            color: $text-prl-50;
+          }
+
+          .icons {
+            transform: translateX(0);
+            transition: all 0.5s ease;
+          }
+        }
+
+        .image {
+          img {
+            object-fit: cover;
+            height: 450px;
+            width: 100%;
+          }
+        }
+
+        .team-item-info {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: 50px;
+          align-items: center;
+          justify-content: center;
+
+          h3 {
+            text-transform: capitalize;
+          }
+
+          p {
+            text-transform: capitalize;
+            font-size: 16px;
+            font-weight: 300;
+            font-style: italic;
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+}
 // ========== Blog section
 
+.Blog {
+  min-height: 100vh;
+  padding: 100px 0;
+
+  .container {
+    .blog-box {
+      @include grid(20rem);
+      position: relative;
+      justify-content: space-between;
+
+      .blog-item {
+        //max-width: 20rem;
+        border-radius: 10px;
+        box-shadow: $shadow;
+        margin: 10px;
+        overflow: hidden;
+
+        &:hover .image img {
+          transform: scale(1.05);
+        }
+
+        .image {
+          height: 200px;
+          width: 100%;
+          overflow: hidden;
+
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: all 0.3s linear;
+          }
+        }
+        .content {
+          padding: 10px 5px;
+
+          .icons {
+            border-bottom: $line-border;
+            display: flex;
+            padding: 0 10px 10px 10px;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+              font-size: 10px;
+              color: $text-black-50;
+              text-transform: capitalize;
+
+              &:hover {
+                color: $text-sec-50;
+              }
+
+              i {
+                color: $text-sec-50;
+                padding-right: 0.5rem;
+              }
+            }
+          }
+
+          h3 {
+            margin: 0 10px;
+            font-size: 26px;
+            color: $text-sec-50;
+            text-transform: capitalize;
+          }
+
+          p {
+            margin: 0 10px;
+            font-size: 16px;
+            color: $text-black-50;
+            text-transform: capitalize;
+          }
+
+          a {
+            margin: 10px;
+            max-width: 100px;
+            font-size: 14px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
 // ========== Contact section
 
 // ========== Copyright Section

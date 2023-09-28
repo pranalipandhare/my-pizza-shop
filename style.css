@@ -143,7 +143,7 @@ header .nav li a:hover {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: url(../images/p2.jpg) no-repeat;
+  background: url(../images/w1.jpg) no-repeat;
   background-size: cover;
   align-items: center;
   justify-content: center;
@@ -198,14 +198,14 @@ header .nav li a:hover {
 }
 .about .container .row .about-img {
   position: relative;
-  width: 40%;
+  width: 45%;
 }
 .about .container .row .about-img .img-bx {
   position: relative;
 }
 .about .container .row .about-img .img-bx img {
   min-height: 80vh;
-  min-width: 100vh;
+  min-width: 85vh;
   position: relative;
   object-fit: cover;
   border-radius: 10px;
@@ -541,4 +541,160 @@ header .nav li a:hover {
 }
 .gallery .container .button .btn-1 {
   max-width: 150px;
+}
+
+.team {
+  min-height: 100vh;
+  padding: 100px 0;
+}
+.team .container .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  justify-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 15px;
+}
+.team .container .row .team-item {
+  position: relative;
+  height: 520px;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+.team .container .row .team-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.team .container .row .team-item .icons {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 450px;
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  z-index: 5;
+  transform: translateX(50px);
+  transition: all 0.5s ease;
+}
+.team .container .row .team-item .icons a {
+  position: relative;
+  font-size: 18px;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  color: #fff;
+  margin: 0 10px 10px 0;
+}
+.team .container .row .team-item .icons a:hover {
+  columns: rgb(235, 146, 31);
+}
+.team .container .row .team-item:hover {
+  transition: all 0.5s ease;
+  background: rgb(235, 246, 31);
+}
+.team .container .row .team-item:hover .team-item-info {
+  color: #fff;
+}
+.team .container .row .team-item:hover .icons {
+  transform: translateX(0);
+  transition: all 0.5s ease;
+}
+.team .container .row .team-item .image img {
+  object-fit: cover;
+  height: 450px;
+  width: 100%;
+}
+.team .container .row .team-item .team-item-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.team .container .row .team-item .team-item-info h3 {
+  text-transform: capitalize;
+}
+.team .container .row .team-item .team-item-info p {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.Blog {
+  min-height: 100vh;
+  padding: 100px 0;
+}
+.Blog .container .blog-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  position: relative;
+  justify-content: space-between;
+}
+.Blog .container .blog-box .blog-item {
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  margin: 10px;
+  overflow: hidden;
+}
+.Blog .container .blog-box .blog-item:hover .image img {
+  transform: scale(1.05);
+}
+.Blog .container .blog-box .blog-item .image {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+.Blog .container .blog-box .blog-item .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s linear;
+}
+.Blog .container .blog-box .blog-item .content {
+  padding: 10px 5px;
+}
+.Blog .container .blog-box .blog-item .content .icons {
+  border-bottom: 0.1px solid rgba(0, 0, 0, 0.04);
+  display: flex;
+  padding: 0 10px 10px 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.Blog .container .blog-box .blog-item .content .icons a {
+  font-size: 10px;
+  color: #000;
+  text-transform: capitalize;
+}
+.Blog .container .blog-box .blog-item .content .icons a:hover {
+  color: rgb(235, 146, 31);
+}
+.Blog .container .blog-box .blog-item .content .icons a i {
+  color: rgb(235, 146, 31);
+  padding-right: 0.5rem;
+}
+.Blog .container .blog-box .blog-item .content h3 {
+  margin: 0 10px;
+  font-size: 26px;
+  color: rgb(235, 146, 31);
+  text-transform: capitalize;
+}
+.Blog .container .blog-box .blog-item .content p {
+  margin: 0 10px;
+  font-size: 16px;
+  color: #000;
+  text-transform: capitalize;
+}
+.Blog .container .blog-box .blog-item .content a {
+  margin: 10px;
+  max-width: 100px;
+  font-size: 14px;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
