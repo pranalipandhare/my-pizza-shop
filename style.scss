@@ -391,6 +391,7 @@ header {
       padding: 0 15px;
       width: 100%;
       justify-items: center;
+      gap: 25px;
 
       .menu-tabs {
         padding: 0 15px 50px;
@@ -637,6 +638,7 @@ header {
 
           img {
             height: 100%;
+            width: 100%;
           }
         }
 
@@ -660,7 +662,8 @@ header {
           grid-column: span 2;
 
           img {
-            transform: translateY(-40px);
+            height: 100%;
+            width: 100%;
           }
         }
 
@@ -740,7 +743,7 @@ header {
             margin: 0 10px 10px 0;
 
             &:hover {
-              columns: $text-sec-50;
+              color: $text-sec-50;
             }
           }
         }
@@ -793,18 +796,19 @@ header {
 }
 // ========== Blog section
 
-.Blog {
+.blog {
   min-height: 100vh;
-  padding: 100px 0;
+  padding: 10px 0;
 
   .container {
     .blog-box {
       @include grid(20rem);
       position: relative;
       justify-content: space-between;
+      padding-left: 35px;
 
       .blog-item {
-        //max-width: 20rem;
+        max-width: 20rem;
         border-radius: 10px;
         box-shadow: $shadow;
         margin: 10px;
@@ -833,8 +837,8 @@ header {
             border-bottom: $line-border;
             display: flex;
             padding: 0 10px 10px 10px;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
 
             a {
               font-size: 10px;
@@ -868,7 +872,7 @@ header {
 
           a {
             margin: 10px;
-            max-width: 100px;
+            max-width: 200px;
             font-size: 14px;
             font-weight: 500;
           }
@@ -879,7 +883,147 @@ header {
 }
 // ========== Contact section
 
+.contact {
+  padding: 20px 0 0 0;
+  min-height: 100vh;
+
+  .banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background: no-repeat;
+      position: absolute;
+      z-index: -1;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100px;
+      z-index: 1;
+      background: linear-gradient(to bottom, #fff, transparent);
+    }
+  }
+
+  .container {
+    .formBox {
+      display: flex;
+      position: relative;
+      width: 100%;
+      flex: 0 0 50%;
+      margin-top: 35px;
+      padding: 40px;
+      justify-content: space-between;
+
+      .row {
+        background: $bg-white-50;
+        width: 40%;
+        height: 450px;
+        border-radius: 10px;
+        box-shadow: $shadow;
+        padding: 20px;
+
+        h3 {
+          color: $text-sec-50;
+          font-size: 20px;
+          margin: 10px 0 10px 0;
+          font-weight: 600;
+        }
+
+        .inputBox:not(:last-child) {
+          position: relative;
+          width: 100%;
+          margin-bottom: 10px;
+
+          input,
+          textarea {
+            width: 100%;
+            background: $bg-white-100;
+            border-radius: 5px;
+            border: 1px solid $bg-white-50;
+            padding: 10px;
+            color: $text-sec-100;
+            outline: none;
+            font-size: 16px;
+            font-weight: 300;
+            resize: none;
+
+            &:hover {
+              border: 1px solid $bg-secondary-50;
+            }
+
+            &:focus {
+              border: 1px solid $bg-secondary-50;
+            }
+          }
+        }
+      }
+    }
+
+    /* .contactBox {
+      display: flex;
+      position: relative;
+      width: 100%;
+      flex: 0 0 50%;
+      padding: 20px;
+      justify-content: space-between;
+
+      .row {
+        background: $bg-white-50;
+        width: 35%;
+        height: 50%;
+        border-radius: 10px;
+        box-shadow: $shadow;
+        padding: 20px;
+
+        .contactItem {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+
+          span {
+            text-transform: capitalize;
+            font-weight: 600;
+            color: $text-sec-50;
+          }
+        }
+      }
+    } */
+  }
+}
+
 // ========== Copyright Section
+
+.cp {
+  margin: 17px 0 0 0;
+  background: $bg-white-50;
+  padding: 1px 30px;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+
+  p {
+    color: $text-black-50;
+  }
+
+  a {
+    color: $text-sec-50;
+    font-weight: 400;
+    text-decoration: none;
+  }
+}
 
 // ========== Media queries
 

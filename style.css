@@ -309,6 +309,7 @@ header .nav li a:hover {
   padding: 0 15px;
   width: 100%;
   justify-items: center;
+  gap: 25px;
 }
 .menu .container .row .menu-tabs {
   padding: 0 15px 50px;
@@ -505,6 +506,7 @@ header .nav li a:hover {
 }
 .gallery .container .row .photo:nth-child(2) img {
   height: 100%;
+  width: 100%;
 }
 .gallery .container .row .photo:nth-child(3) {
   grid-row: span 2;
@@ -522,7 +524,8 @@ header .nav li a:hover {
   grid-column: span 2;
 }
 .gallery .container .row .photo:nth-child(8) img {
-  transform: translateY(-40px);
+  height: 100%;
+  width: 100%;
 }
 .gallery .container .row .photo img {
   min-height: 250px;
@@ -591,7 +594,7 @@ header .nav li a:hover {
   margin: 0 10px 10px 0;
 }
 .team .container .row .team-item .icons a:hover {
-  columns: rgb(235, 146, 31);
+  color: rgb(235, 146, 31);
 }
 .team .container .row .team-item:hover {
   transition: all 0.5s ease;
@@ -628,73 +631,204 @@ header .nav li a:hover {
   opacity: 0.6;
 }
 
-.Blog {
+.blog {
   min-height: 100vh;
-  padding: 100px 0;
+  padding: 10px 0;
 }
-.Blog .container .blog-box {
+.blog .container .blog-box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   position: relative;
   justify-content: space-between;
+  padding-left: 35px;
 }
-.Blog .container .blog-box .blog-item {
+.blog .container .blog-box .blog-item {
+  max-width: 20rem;
   border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   margin: 10px;
   overflow: hidden;
 }
-.Blog .container .blog-box .blog-item:hover .image img {
+.blog .container .blog-box .blog-item:hover .image img {
   transform: scale(1.05);
 }
-.Blog .container .blog-box .blog-item .image {
+.blog .container .blog-box .blog-item .image {
   height: 200px;
   width: 100%;
   overflow: hidden;
 }
-.Blog .container .blog-box .blog-item .image img {
+.blog .container .blog-box .blog-item .image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   transition: all 0.3s linear;
 }
-.Blog .container .blog-box .blog-item .content {
+.blog .container .blog-box .blog-item .content {
   padding: 10px 5px;
 }
-.Blog .container .blog-box .blog-item .content .icons {
+.blog .container .blog-box .blog-item .content .icons {
   border-bottom: 0.1px solid rgba(0, 0, 0, 0.04);
   display: flex;
   padding: 0 10px 10px 10px;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
-.Blog .container .blog-box .blog-item .content .icons a {
+.blog .container .blog-box .blog-item .content .icons a {
   font-size: 10px;
   color: #000;
   text-transform: capitalize;
 }
-.Blog .container .blog-box .blog-item .content .icons a:hover {
+.blog .container .blog-box .blog-item .content .icons a:hover {
   color: rgb(235, 146, 31);
 }
-.Blog .container .blog-box .blog-item .content .icons a i {
+.blog .container .blog-box .blog-item .content .icons a i {
   color: rgb(235, 146, 31);
   padding-right: 0.5rem;
 }
-.Blog .container .blog-box .blog-item .content h3 {
+.blog .container .blog-box .blog-item .content h3 {
   margin: 0 10px;
   font-size: 26px;
   color: rgb(235, 146, 31);
   text-transform: capitalize;
 }
-.Blog .container .blog-box .blog-item .content p {
+.blog .container .blog-box .blog-item .content p {
   margin: 0 10px;
   font-size: 16px;
   color: #000;
   text-transform: capitalize;
 }
-.Blog .container .blog-box .blog-item .content a {
+.blog .container .blog-box .blog-item .content a {
   margin: 10px;
-  max-width: 100px;
+  max-width: 200px;
   font-size: 14px;
   font-weight: 500;
+}
+
+.contact {
+  padding: 20px 0 0 0;
+  min-height: 100vh;
+}
+.contact .banner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.contact .banner img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background: no-repeat;
+  position: absolute;
+  z-index: -1;
+}
+.contact .banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100px;
+  z-index: 1;
+  background: linear-gradient(to bottom, #fff, transparent);
+}
+.contact .container {
+  /* .contactBox {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex: 0 0 50%;
+    padding: 20px;
+    justify-content: space-between;
+
+    .row {
+      background: $bg-white-50;
+      width: 35%;
+      height: 50%;
+      border-radius: 10px;
+      box-shadow: $shadow;
+      padding: 20px;
+
+      .contactItem {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+
+        span {
+          text-transform: capitalize;
+          font-weight: 600;
+          color: $text-sec-50;
+        }
+      }
+    }
+  } */
+}
+.contact .container .formBox {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex: 0 0 50%;
+  margin-top: 35px;
+  padding: 40px;
+  justify-content: space-between;
+}
+.contact .container .formBox .row {
+  background: #fff;
+  width: 40%;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+.contact .container .formBox .row h3 {
+  color: rgb(235, 146, 31);
+  font-size: 20px;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
+}
+.contact .container .formBox .row .inputBox:not(:last-child) {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.contact .container .formBox .row .inputBox:not(:last-child) input,
+.contact .container .formBox .row .inputBox:not(:last-child) textarea {
+  width: 100%;
+  background: #f5f5f5;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  padding: 10px;
+  color: rgb(218, 128, 26);
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  resize: none;
+}
+.contact .container .formBox .row .inputBox:not(:last-child) input:hover,
+.contact .container .formBox .row .inputBox:not(:last-child) textarea:hover {
+  border: 1px solid rgb(235, 246, 31);
+}
+.contact .container .formBox .row .inputBox:not(:last-child) input:focus,
+.contact .container .formBox .row .inputBox:not(:last-child) textarea:focus {
+  border: 1px solid rgb(235, 246, 31);
+}
+
+.cp {
+  margin: 17px 0 0 0;
+  background: #fff;
+  padding: 1px 30px;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.cp p {
+  color: #000;
+}
+.cp a {
+  color: rgb(235, 146, 31);
+  font-weight: 400;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
