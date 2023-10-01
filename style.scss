@@ -6,7 +6,7 @@
 
 $bg-white-50: #fff;
 $bg-white-100: #f5f5f5;
-$bg-secondary-50: rgb(235, 246, 31);
+$bg-secondary-50: rgb(235, 146, 31);
 
 $text-prl-50: #fff;
 $text-sec-50: rgb(235, 146, 31);
@@ -143,7 +143,7 @@ img {
     align-items: center;
 
     &.fade-out {
-      opacity: ;
+      opacity: 0;
     }
   }
 }
@@ -217,7 +217,7 @@ header {
 }
 
 // ========== Landing page
-.homo {
+.home {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -282,7 +282,7 @@ header {
 
       .about-img {
         position: relative;
-        width: 45%;
+        width: 48%;
 
         .img-bx {
           position: relative;
@@ -299,7 +299,7 @@ header {
 
       .about-text {
         position: relative;
-        width: 50%;
+        width: 48%;
         height: 100%;
 
         .text-bx {
@@ -324,7 +324,7 @@ header {
       }
 
       &:nth-of-type(3) {
-        padding-bottom: 60px;
+        padding-bottom: 64px;
 
         .about-text {
           width: 100%;
@@ -416,7 +416,7 @@ header {
       padding: 0 15px;
       width: 100%;
       justify-items: center;
-      gap: 15px;
+      gap: 10px;
 
       .menu-tabs {
         padding: 0 15px 50px;
@@ -456,7 +456,7 @@ header {
         border-radius: 10px;
         background: $bg-white-50;
         max-width: 15rem;
-        padding: 15px;
+        //padding: 15px;
         text-align: center;
         overflow: hidden;
         box-shadow: $shadow;

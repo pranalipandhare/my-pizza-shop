@@ -61,7 +61,7 @@ img {
 .btn-1 {
   font-size: 16px;
   color: rgb(235, 146, 31);
-  border: 1px solid rgb(235, 246, 31);
+  border: 1px solid rgb(235, 146, 31);
   border-radius: 30px;
   display: inline-block;
   text-transform: capitalize;
@@ -75,7 +75,7 @@ img {
 }
 .btn-1:hover {
   color: #fff;
-  background: rgb(235, 246, 31);
+  background: rgb(235, 146, 31);
 }
 
 @keyframes fadeIn {
@@ -107,6 +107,9 @@ img {
   top: calc(50% - 100px);
   justify-content: center;
   align-items: center;
+}
+.page-loader .icon.fade-out {
+  opacity: 0;
 }
 
 header {
@@ -160,7 +163,7 @@ header .nav li a:hover {
   color: rgb(235, 146, 31);
 }
 
-.homo {
+.home {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -170,7 +173,7 @@ header .nav li a:hover {
   justify-content: center;
   display: flex;
 }
-.homo:before {
+.home:before {
   content: "";
   position: absolute;
   left: 0;
@@ -180,29 +183,29 @@ header .nav li a:hover {
   z-index: 1;
   background: rgba(0, 0, 0, 0.3);
 }
-.homo .content {
+.home .content {
   max-width: 900px;
   text-align: center;
   z-index: 2;
 }
-.homo .content h2 {
+.home .content h2 {
   font-size: 90px;
   font-weight: 600;
   font-family: "Great Vibes", cursive;
   color: #fff;
 }
-.homo .content p {
+.home .content p {
   font-size: 20px;
   font-weight: 500;
   color: whitesmoke;
   margin-bottom: 20px;
 }
-.homo .content a {
+.home .content a {
   color: #fff;
   border: #fff 1px solid;
   max-width: 200px;
 }
-.homo .content a:hover {
+.home .content a:hover {
   background: #fff;
   color: rgb(235, 146, 31);
 }
@@ -219,7 +222,7 @@ header .nav li a:hover {
 }
 .about .container .row .about-img {
   position: relative;
-  width: 45%;
+  width: 48%;
 }
 .about .container .row .about-img .img-bx {
   position: relative;
@@ -233,7 +236,7 @@ header .nav li a:hover {
 }
 .about .container .row .about-text {
   position: relative;
-  width: 50%;
+  width: 48%;
   height: 100%;
 }
 .about .container .row .about-text .text-bx h3 {
@@ -252,7 +255,7 @@ header .nav li a:hover {
   max-width: 250px;
 }
 .about .container .row:nth-of-type(3) {
-  padding-bottom: 60px;
+  padding-bottom: 64px;
 }
 .about .container .row:nth-of-type(3) .about-text {
   width: 100%;
@@ -330,7 +333,7 @@ header .nav li a:hover {
   padding: 0 15px;
   width: 100%;
   justify-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 .menu .container .row .menu-tabs {
   padding: 0 15px 50px;
@@ -354,7 +357,7 @@ header .nav li a:hover {
 }
 .menu .container .row .menu-tabs .tab-item.active {
   color: rgb(235, 146, 31);
-  border: 1px solid rgb(235, 246, 31);
+  border: 1px solid rgb(235, 146, 31);
   display: inline-block;
   transition: all 0.5s ease;
   cursor: pointer;
@@ -364,7 +367,6 @@ header .nav li a:hover {
   border-radius: 10px;
   background: #fff;
   max-width: 15rem;
-  padding: 15px;
   text-align: center;
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
@@ -437,7 +439,7 @@ header .nav li a:hover {
   color: rgb(235, 146, 31);
 }
 .menu .container .row .item .content .info i {
-  color: rgb(235, 246, 31);
+  color: rgb(235, 146, 31);
 }
 .menu .container .row .item .content .info i span {
   font-weight: 400;
@@ -620,7 +622,7 @@ header .nav li a:hover {
 }
 .team .container .row .team-item:hover {
   transition: all 0.5s ease;
-  background: rgb(235, 246, 31);
+  background: rgb(235, 146, 31);
 }
 .team .container .row .team-item:hover .team-item-info {
   color: #fff;
@@ -832,11 +834,11 @@ header .nav li a:hover {
 }
 .contact .container .formBox .row .inputBox:not(:last-child) input:hover,
 .contact .container .formBox .row .inputBox:not(:last-child) textarea:hover {
-  border: 1px solid rgb(235, 246, 31);
+  border: 1px solid rgb(235, 146, 31);
 }
 .contact .container .formBox .row .inputBox:not(:last-child) input:focus,
 .contact .container .formBox .row .inputBox:not(:last-child) textarea:focus {
-  border: 1px solid rgb(235, 246, 31);
+  border: 1px solid rgb(235, 146, 31);
 }
 
 .cp {

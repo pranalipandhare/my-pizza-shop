@@ -50,11 +50,12 @@ window.addEventListener("load", function () {
   document.querySelector(".page-loader").classList.add("fade-out");
   this.setTimeout(function () {
     document.querySelector(".page-loader").style.display = "none";
-  }, 500);
+  });
 
   //--------AOS or scrool after loader
 
   AOS.init({
+    Delay: 500,
     duration: 600,
   });
 });

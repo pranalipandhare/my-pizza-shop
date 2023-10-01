@@ -16,7 +16,11 @@
     />
 
     <!--AOS CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" 
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ 
 
   </head>
   <body>
@@ -36,33 +40,33 @@
     <!-- Navigation bar start -->
 
     <header>
-      <a href="a" class="logo" data-aos="fade-down" >Pizza Craving<span>~</span></a>
+      <a href="a" class="logo" data-aos="fade-down">Pizza Craving<span>~</span></a>
       <div class="menuToggle" onclick="toggleMenu();" data-aos="fade-down" ></div>
       <ul class="nav">
-        <li data-aos="fade-down" ><a href="#home" onclick="toggleMenu();"">Home</a></li>
-        <li data-aos="fade-down" ><a href="#about" onclick="toggleMenu();"">About</a></li>
-        <li data-aos="fade-down" ><a href="#service" onclick="toggleMenu();"">Services</a></li>
-        <li data-aos="fade-down" ><a href="#menu" onclick="toggleMenu();"">Menu</a></li>
-        <li data-aos="fade-down" ><a href="#testi" onclick="toggleMenu();"">Testimonial</a></li>
-        <li data-aos="fade-down" ><a href="#gallery" onclick="toggleMenu();"">Gallery</a></li>
-        <li data-aos="fade-down" ><a href="#team" onclick="toggleMenu();"">Team</a></li>
-        <li data-aos="fade-down" ><a href="#blog" onclick="toggleMenu();"">Blog</a></li>
-        <li data-aos="fade-down" ><a href="#contact" onclick="toggleMenu();"">Contact</a></li>
+        <li data-aos="fade-down" data-aos-delay="20"><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li data-aos="fade-down" data-aos-delay="40"><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li data-aos="fade-down" data-aos-delay="60"><a href="#service" onclick="toggleMenu()">Services</a></li>
+        <li data-aos="fade-down" data-aos-delay="80"><a href="#menu" onclick="toggleMenu()">Menu</a></li>
+        <li data-aos="fade-down" data-aos-delay="80"><a href="#testi" onclick="toggleMenu()">Testimonial</a></li>
+        <li data-aos="fade-down" data-aos-delay="120"><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+        <li data-aos="fade-down" data-aos-delay="140"><a href="#team" onclick="toggleMenu()">Team</a></li>
+        <li data-aos="fade-down" data-aos-delay="160"><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+        <li data-aos="fade-down" data-aos-delay="180" ><a href="#contact" onclick="toggleMenu()">Contact</a></li>
       </ul>
     </header>
     <!-- Navigation bar end -->
 
     <!-- Landing page start -->
 
-    <section class="homo" id="homo">
+    <section class="home" id="home">
       <div class="content">
-        <h2 data-aos="fade-down" >hat pizza</h2>
-        <p data-aos="fade-down">
+        <h2 data-aos="fade-down" data-aos-delay="50" >hat pizza</h2>
+        <p data-aos="fade-down" data-aos-delay="100">
           Lorem ipsum dolor sit amet consectetur <br />
           blanditiis sed officiis laboriosam dolor est doloribus repellendus
           atque
         </p>
-        <a href="#about" class="btn-1" data-aos="fade-down">Let's Start</a>
+        <a href="#about" class="btn-1" data-aos="fade-down" data-aos-delay="150">Let's Start</a>
       </div>
     </section>
 
@@ -72,20 +76,20 @@
 
     <section class="about" id="about">
       <div class="container">
-        <div class="titleText">
+        <div class="titleText" data-aos="fade-up">
           <div class="section-title">
             <h2 data-title="Our Histroy">About Us</h2>
           </div>
         </div>
 
         <div class="row">
-          <div class="about-img">
+          <div class="about-img" data-aos="fade-right">
             <div class="img-bx">
               <img src="../images/f2.jpg" alt="about-image" />
             </div>
           </div>
 
-          <div class="about-text">
+          <div class="about-text" data-aos="fade-left">
             <div class="text-bx">
               <h3>Welcome to our resturant site</h3>
               <p>
@@ -106,7 +110,7 @@
         </div>
 
         <div class="row">
-          <div class="about-text">
+          <div class="about-text" data-aos="fade-down">
             <div class="text-bx">
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -123,7 +127,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="about-text">
+          <div class="about-text" data-aos="fade-right">
             <div class="text-bx">
               <h3>Customer satisfaction in number one</h3>
               <p>
@@ -138,7 +142,7 @@
               <a href="#service" class="btn-1">Check our Services</a>
             </div>
           </div>
-          <div class="about-img">
+          <div class="about-img" data-aos="fade-left">
             <div class="img-bx">
               <img src="../images/f3.jpg" alt="About-image" />
             </div>
@@ -153,33 +157,33 @@
 
     <section class="service" id="service">
       <div class="container">
-        <div class="titleText">
+        <div class="titleText" data-aos="fade-up">
           <div class="section-title">
             <h2 data-title="Features">Our Services</h2>
           </div>
         </div>
 
         <div class="row">
-          <div class="box">
+          <div class="box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" >
             <i class="fa fa-headset"></i>
             <h3>24/7 Support</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </div>
 
-          <div class="box">
+          <div class="box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" >
             <i class="fa fa-thumbs-up"></i>
             <h3>Best Quality</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </div>
 
-          <div class="box">
+          <div class="box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" >
             <i class="fa fa-shipping-fast"></i>
             <h3>Free Delivery</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </div>
         </div>
 
-        <div class="button">
+        <div class="button"  data-aos="fade-up">
           <a href="#menu" class="btn-1">Order Now</a>
         </div>
       </div>
@@ -191,7 +195,7 @@
 
     <section class="menu" id="menu">
       <div class="container">
-        <div class="titleText">
+        <div class="titleText"  data-aos="zoom-in-up">
           <div class="section-title">
             <h2 data-title="Order Now">Our Menu</h2>
           </div>
@@ -199,15 +203,15 @@
 
         <div class="row">
           <div class="menu-tabs">
-            <span class="tab-item active" data-target="all">All</span>
-            <span class="tab-item" data-target="big">Big</span>
-            <span class="tab-item" data-target="medium">Medium</span>
-            <span class="tab-item" data-target="small">Small</span>
+            <span data-aos="fade-up" data-aos-delay="50" class="tab-item active" data-target="all">All</span>
+            <span data-aos="fade-up" data-aos-delay="100" class="tab-item" data-target="big">Big</span>
+            <span data-aos="fade-up" data-aos-delay="150" class="tab-item" data-target="medium">Medium</span>
+            <span data-aos="fade-up" data-aos-delay="200" class="tab-item" data-target="small">Small</span>
           </div>
         </div>
 
         <div class="row">
-          <div class="item" data-category="small">
+          <div data-aos="fade-up" class="item" data-category="small">
             <div class="icons">
               <a href="#" class="fas fa-shopping-cart"></a>
               <a href="#" class="fas fa-heart"></a>
@@ -230,7 +234,7 @@
             </div>
           </div>
 
-          <div class="item" data-category="big">
+          <div data-aos="fade-up" class="item" data-category="big">
             <div class="icons">
               <a href="#" class="fas fa-shopping-cart"></a>
               <a href="#" class="fas fa-heart"></a>
@@ -253,7 +257,7 @@
             </div>
           </div>
 
-          <div class="item" data-category="small">
+          <div data-aos="fade-up" class="item" data-category="small">
             <div class="icons">
               <a href="#" class="fas fa-shopping-cart"></a>
               <a href="#" class="fas fa-heart"></a>
@@ -278,7 +282,7 @@
             </div>
           </div>
 
-          <div class="item" data-category="small">
+          <div  data-aos="fade-up" class="item" data-category="small">
             <div class="icons">
               <a href="#" class="fas fa-shopping-cart"></a>
               <a href="#" class="fas fa-heart"></a>
@@ -303,7 +307,7 @@
             </div>
           </div>
 
-          <div class="item" data-category="big">
+          <div data-aos="fade-up" class="item" data-category="big">
             <div class="icons">
               <a href="#" class="fas fa-shopping-cart"></a>
               <a href="#" class="fas fa-heart"></a>
@@ -325,7 +329,7 @@
             </div>
           </div>
 
-          <div class="item" data-category="small">
+          <div data-aos="fade-up" class="item" data-category="small">
             <div class="icons">
               <a href="#" class="fas fa-shopping-cart"></a>
               <a href="#" class="fas fa-heart"></a>
@@ -350,7 +354,7 @@
             </div>
           </div>
 
-          <div class="item" data-category="medium">
+          <div data-aos="fade-up" class="item" data-category="medium">
             <div class="icons">
               <a href="#" class="fas fa-shopping-cart"></a>
               <a href="#" class="fas fa-heart"></a>
@@ -374,7 +378,7 @@
             </div>
           </div>
 
-          <div class="item" data-category="big">
+          <div data-aos="fade-up" class="item" data-category="big">
             <div class="icons">
               <a href="#" class="fas fa-shopping-cart"></a>
               <a href="#" class="fas fa-heart"></a>
@@ -398,7 +402,7 @@
             </div>
           </div>
 
-          <div class="item" data-category="medium">
+          <div data-aos="fade-up" class="item" data-category="medium">
             <div class="icons">
               <a href="#" class="fas fa-shopping-cart"></a>
               <a href="#" class="fas fa-heart"></a>
@@ -421,7 +425,7 @@
             </div>
           </div>
 
-          <div class="item" data-category="big">
+          <div data-aos="fade-up" class="item" data-category="big">
             <div class="icons">
               <a href="#" class="fas fa-shopping-cart"></a>
               <a href="#" class="fas fa-heart"></a>
@@ -444,7 +448,7 @@
             </div>
           </div>
 
-          <div class="item" data-category="medium">
+          <div data-aos="fade-up" class="item" data-category="medium">
             <div class="icons">
               <a href="#" class="fas fa-shopping-cart"></a>
               <a href="#" class="fas fa-heart"></a>
@@ -468,7 +472,7 @@
             </div>
           </div>
 
-          <div class="item" data-category="big">
+          <div data-aos="fade-up" class="item" data-category="big">
             <div class="icons">
               <a href="#" class="fas fa-shopping-cart"></a>
               <a href="#" class="fas fa-heart"></a>
@@ -501,14 +505,14 @@
 
     <section class="testi" id="testi">
       <div class="container">
-        <div class="titleText">
+        <div class="titleText" data-aos="fade-down">
           <div class="section-title">
             <h2 data-title="Our Testimonial">Some Feedback</h2>
           </div>
         </div>
 
         <div class="row">
-          <div class="testi-item">
+          <div class="testi-item" data-aos="zoom-in-down" data-aos-delay="50">
             <div class="user">
               <img src="../images/g3.jpg" alt="image" />
               <div class="info">
@@ -519,7 +523,7 @@
             <p>I really like Pizza craving 😊🧡and its awesome service🤩. The pizza was really awesome and very delicious. The service too was really good. </p>
           </div>
 
-          <div class="testi-item">
+          <div class="testi-item" data-aos="zoom-in-down" data-aos-delay="50">
             <div class="user">
               <img src="../images/g2.jpg" alt="image" />
               <div class="info">
@@ -533,7 +537,7 @@
           </div>
         
 
-        <div class="testi-item">
+        <div class="testi-item" data-aos="zoom-in-down" data-aos-delay="50">
           <div class="user">
             <img src="../images/g1.jpg" alt="" />
             <div class="info">
@@ -552,7 +556,7 @@
 
     <section class="gallery" id="gallery">
       <div class="container"> 
-        <div class="titleText">
+        <div class="titleText" data-aos="fade-up">
           <div class="section-title">
             <h2 data-title="Gallery">Our Photos  </h2>
           </div>
@@ -609,7 +613,7 @@
     <section class="team" id="team">
       <div class="container">
 
-        <div class="titleText">
+        <div class="titleText" data-aos="fade-up">
           <div class="section-title">
             <h2 data-title="Crew">Our Chef </h2>
           </div>
@@ -617,7 +621,7 @@
         
         <div class="row">
 
-          <div class="team-item">
+          <div class="team-item" data-aos="fade-right" data-aos-delay="50">
             <div class="icons">
               <a href="#" class="fas fa-eye"></a>
               <a href="#" class="fas fa-star"></a>
@@ -631,7 +635,7 @@
             </div>
           </div>
 
-          <div class="team-item">
+          <div class="team-item" data-aos="fade-down" data-aos-delay="50">
             <div class="icons">
               <a href="#" class="fas fa-eye"></a>
               <a href="#" class="fas fa-star"></a>
@@ -645,7 +649,7 @@
             </div>
           </div>
 
-          <div class="team-item">
+          <div class="team-item" data-aos="fade-left" data-aos-delay="50">
             <div class="icons">
               <a href="#" class="fas fa-eye"></a>
               <a href="#" class="fas fa-star"></a>
@@ -675,7 +679,7 @@
 
       <div class="container">
 
-      <div class="titleText">
+      <div class="titleText" data-aos="fade-up">
         <div class="section-title">
           <h2 data-title="Blog">Weekly Posts</h2>
         </div>
@@ -750,7 +754,7 @@
 
       <div class="container">
 
-        <div class="formBox">
+        <div class="formBox" data-aos="fade-up">
 
           <div class="row">
 
@@ -808,7 +812,9 @@
     <script src="script.js"></script>
 
     <!--AOS js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" 
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
       AOS/inti({
