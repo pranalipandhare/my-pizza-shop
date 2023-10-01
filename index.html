@@ -14,26 +14,40 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+
+    <!--AOS CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   </head>
   <body>
     <!-- Page loader start -->
+
+    <div class="page-loader">
+      <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+      <lord-icon class="icon"
+         src="https://cdn.lordicon.com/prxpxnbf.json"
+         trigger="loop"
+         colors="outline:#121331,primary:#f24c00,secondary:#ffc738">
+      </lord-icon>
+      </div>
 
     <!-- Page loader end -->
 
     <!-- Navigation bar start -->
 
     <header>
-      <a href="a" class="logo">Pizza Craving<span>~</span></a>
+      <a href="a" class="logo" data-aos="fade-down" >Pizza Craving<span>~</span></a>
+      <div class="menuToggle" onclick="toggleMenu();" data-aos="fade-down" ></div>
       <ul class="nav">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#service">Services</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#testi">Testimonial</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li data-aos="fade-down" ><a href="#home" onclick="toggleMenu();"">Home</a></li>
+        <li data-aos="fade-down" ><a href="#about" onclick="toggleMenu();"">About</a></li>
+        <li data-aos="fade-down" ><a href="#service" onclick="toggleMenu();"">Services</a></li>
+        <li data-aos="fade-down" ><a href="#menu" onclick="toggleMenu();"">Menu</a></li>
+        <li data-aos="fade-down" ><a href="#testi" onclick="toggleMenu();"">Testimonial</a></li>
+        <li data-aos="fade-down" ><a href="#gallery" onclick="toggleMenu();"">Gallery</a></li>
+        <li data-aos="fade-down" ><a href="#team" onclick="toggleMenu();"">Team</a></li>
+        <li data-aos="fade-down" ><a href="#blog" onclick="toggleMenu();"">Blog</a></li>
+        <li data-aos="fade-down" ><a href="#contact" onclick="toggleMenu();"">Contact</a></li>
       </ul>
     </header>
     <!-- Navigation bar end -->
@@ -42,13 +56,13 @@
 
     <section class="homo" id="homo">
       <div class="content">
-        <h2>hat pizza</h2>
-        <p>
+        <h2 data-aos="fade-down" >hat pizza</h2>
+        <p data-aos="fade-down">
           Lorem ipsum dolor sit amet consectetur <br />
           blanditiis sed officiis laboriosam dolor est doloribus repellendus
           atque
         </p>
-        <a href="#about" class="btn-1">Let's Start</a>
+        <a href="#about" class="btn-1" data-aos="fade-down">Let's Start</a>
       </div>
     </section>
 
@@ -792,5 +806,15 @@
 
     <!-- Javascript link -->
     <script src="script.js"></script>
+
+    <!--AOS js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+      AOS/inti({
+        duration: 600,
+      });
+    </script>
+
   </body>
 </html>

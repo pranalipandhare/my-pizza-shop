@@ -122,6 +122,31 @@ img {
   }
 }
 // ========== Page Loader
+.page-loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: $bg-white-50;
+  z-index: 999;
+  transition: all 0.6s ease;
+
+  .icon {
+    position: absolute;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    left: calc(50% - 100px);
+    top: calc(50% - 100px);
+    justify-content: center;
+    align-items: center;
+
+    &.fade-out {
+      opacity: ;
+    }
+  }
+}
 
 // ========== Navigation bar
 header {
@@ -382,7 +407,7 @@ header {
 
 .menu {
   min-height: 100vh;
-  padding: 100px 0 0;
+  padding: 100px 0;
 
   .container {
     .row {
@@ -391,7 +416,7 @@ header {
       padding: 0 15px;
       width: 100%;
       justify-items: center;
-      gap: 25px;
+      gap: 15px;
 
       .menu-tabs {
         padding: 0 15px 50px;
@@ -431,6 +456,7 @@ header {
         border-radius: 10px;
         background: $bg-white-50;
         max-width: 15rem;
+        padding: 15px;
         text-align: center;
         overflow: hidden;
         box-shadow: $shadow;
@@ -548,7 +574,7 @@ header {
 
 .testi {
   min-height: 100vh;
-  padding: 100px 0 0 0;
+  padding: 100px 0;
   background: url(../images/bg.jpg) repeat;
   background-size: 250px 250px;
 
@@ -804,6 +830,7 @@ header {
     .blog-box {
       @include grid(20rem);
       position: relative;
+      justify-items: center;
       justify-content: space-between;
       padding-left: 35px;
 
@@ -1028,7 +1055,287 @@ header {
 // ========== Media queries
 
 // ========== For laptop
+@media (max-width: 996px) {
+  header,
+  header.sticky {
+    padding: 10px 30px;
+
+    .nav {
+      &.active {
+        li {
+          a {
+            color: $text-sec-50;
+            font-size: 28px;
+            font-weight: 500;
+            transition: all 0.5s ease;
+
+            &:hover {
+              color: $text-black-50;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  header {
+    &.sticky {
+      .menuToggle {
+        filter: invert(0);
+      }
+    }
+    .menuToggle {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      background: url(../images/menu-bar.png);
+      cursor: pointer;
+      filter: invert(1);
+
+      &.active {
+        background: url(../images/close-bar.png);
+        background-size: 40px;
+        filter: invert(0);
+        z-index: 100000;
+      }
+    }
+
+    .nav {
+      top: 0;
+      left: 0;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      background: $bg-white-50;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      transform: translateX(1000px);
+      transition: all 0.5s ease;
+
+      &.active {
+        transform: translate(0);
+        transform-origin: left;
+      }
+    }
+  }
+
+  .about {
+    .container {
+      .row {
+        .about-text {
+          .text-bx {
+            h3 {
+              font-size: 20px;
+            }
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .service {
+    .container {
+      .row {
+        justify-content: center;
+        height: 700px;
+        margin: 0 50px;
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+  .gallery {
+    .container {
+      margin: 0 20px;
+
+      .row {
+        grid-template-columns: repeat(3, 225px);
+        grid-template-rows: repeat(4, 225px);
+      }
+    }
+  }
+
+  .blog {
+    .container {
+      .blog-box {
+        .content {
+          .icons {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0;
+
+            a {
+              margin: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+    min-height: 90vh;
+
+    .container {
+      .formBox {
+        width: 150%;
+      }
+
+      .contactBox {
+        .row {
+          flex: 0 0 50%;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}
 
 // ========== For Tablet
+@media (max-width: 768px) {
+  .about {
+    .container {
+      .row {
+        flex-direction: column;
+        padding: 20px;
+
+        &:last-child {
+          flex-direction: column-reverse;
+        }
+        .about-img,
+        .about-text {
+          width: 100%;
+        }
+
+        .about-img {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .gallery {
+    .container {
+      .row {
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(4, 200px);
+      }
+    }
+  }
+
+  .contact {
+    margin: auto;
+
+    .banner {
+      display: none;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      padding: 0 10px;
+      margin: 0 10px;
+      justify-content: center;
+      align-items: center;
+
+      .formBox {
+        flex: 0 0 55%;
+
+        .row {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+
+      .contactBox {
+        align-items: center;
+        flex-direction: 0 0 40%;
+      }
+    }
+  }
+}
 
 // ========== For Mobile
+@media (max-width: 425px) {
+  section {
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .home {
+    .content {
+      margin: 0 20px;
+
+      h2 {
+        font-size: 56px;
+      }
+
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .about {
+    .container {
+      .row {
+        .about-text {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .menu {
+    .container {
+      .row {
+        .item {
+          &:not(:last-child) {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .gallery {
+    .conatiner {
+      .row {
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(6, 150px);
+
+        .photo {
+          &:nth-child(7) {
+            grid-column-start: 2;
+            grid-row-start: 1;
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    .container {
+      flex-direction: column;
+
+      .formBox {
+        flex: 0 0 100%;
+        width: 100%;
+        padding: 50px 15px 20px 15px;
+      }
+
+      .contactBox {
+        padding: 0 15px;
+        flex: 0 0 100%;
+
+        .row {
+          align-items: center;
+          flex-direction: row;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

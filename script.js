@@ -4,7 +4,12 @@ window.addEventListener("scroll", function () {
 });
 
 //---------Toggle Menu
-
+function toggleMenu() {
+  const menuBar = document.querySelector(".menuToggle");
+  const nav = document.querySelector(".nav");
+  menuBar.classList.toggle("active");
+  nav.classList.toggle("active");
+}
 //---------Menu filter
 
 {
@@ -39,3 +44,17 @@ window.addEventListener("scroll", function () {
 }
 
 //---------Page loader
+window.addEventListener("load", function () {
+  //-------- loader
+
+  document.querySelector(".page-loader").classList.add("fade-out");
+  this.setTimeout(function () {
+    document.querySelector(".page-loader").style.display = "none";
+  }, 500);
+
+  //--------AOS or scrool after loader
+
+  AOS.init({
+    duration: 600,
+  });
+});
