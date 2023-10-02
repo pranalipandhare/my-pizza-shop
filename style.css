@@ -14,7 +14,7 @@
 }
 
 body {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -24,11 +24,11 @@ body {
 }
 
 img {
-  width: 100px;
+  width: 100%;
 }
 
 .container {
-  max-width: 1148px;
+  max-width: 1140px;
   margin: auto;
 }
 
@@ -189,7 +189,7 @@ header .nav li a:hover {
   z-index: 2;
 }
 .home .content h2 {
-  font-size: 90px;
+  font-size: 80px;
   font-weight: 600;
   font-family: "Great Vibes", cursive;
   color: #fff;
@@ -216,27 +216,25 @@ header .nav li a:hover {
 }
 .about .container .row {
   display: flex;
-  width: 100%;
-  padding: 0 15px 120px 15px;
+  width: 97%;
+  padding: 20px 15px 100px 20px;
   justify-content: space-between;
 }
 .about .container .row .about-img {
   position: relative;
-  width: 48%;
+  width: 50%;
 }
 .about .container .row .about-img .img-bx {
   position: relative;
 }
 .about .container .row .about-img .img-bx img {
-  min-height: 80vh;
-  min-width: 85vh;
   position: relative;
   object-fit: cover;
   border-radius: 10px;
 }
 .about .container .row .about-text {
   position: relative;
-  width: 48%;
+  width: 45%;
   height: 100%;
 }
 .about .container .row .about-text .text-bx h3 {
@@ -692,7 +690,7 @@ header .nav li a:hover {
   padding: 10px 5px;
 }
 .blog .container .blog-box .blog-item .content .icons {
-  border-bottom: 0.1px solid rgba(0, 0, 0, 0.04);
+  border-bottom: 0.1px solid rgba(0, 0, 0, 0.4);
   display: flex;
   padding: 0 10px 10px 10px;
   align-items: center;
@@ -995,8 +993,9 @@ header .nav li a:hover {
 }
 @media (max-width: 425px) {
   section {
-    padding: 0 20px;
+    padding: 0 15px;
     width: 100%;
+    height: 100%;
   }
   .home .content {
     margin: 0 20px;
