@@ -59,3 +59,6 @@ window.addEventListener("load", function () {
     duration: 600,
   });
 });
+
+// Signup page
+// Get the modal
