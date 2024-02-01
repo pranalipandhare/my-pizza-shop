@@ -60,5 +60,5 @@ window.addEventListener("load", function () {
   });
 });
 
-// Signup page
-// Get the modal
+// Signup page for the site
+// Get the modal for the site
